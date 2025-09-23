@@ -5,20 +5,20 @@
 class Obot < Formula
   desc "Obot CLI"
   homepage "https://github.com/obot-platform/obot"
-  version "0.10.0"
+  version "0.11.0-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obot-platform/obot/releases/download/v0.10.0/obot_v0.10.0_darwin_amd64.tar.gz"
-      sha256 "c9f5673e0e760f002a78fc976d5b60c9bd43b8f6b5fa12a43a8c18808b2ada6a"
+      url "https://github.com/obot-platform/obot/releases/download/v0.11.0-rc1/obot_v0.11.0-rc1_darwin_amd64.tar.gz"
+      sha256 "92e72834ae30d4cd10beee582fda78ced89a72b816e673d7721a56531dfff634"
 
       def install
         bin.install "obot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obot-platform/obot/releases/download/v0.10.0/obot_v0.10.0_darwin_arm64.tar.gz"
-      sha256 "43957b7f42317d467776ecc2e4ca36b38dcb150103320c28c072b75c3a4696cd"
+      url "https://github.com/obot-platform/obot/releases/download/v0.11.0-rc1/obot_v0.11.0-rc1_darwin_arm64.tar.gz"
+      sha256 "6274e1874b8b8cee6561ab875e14474c754e838a861fed990490e0ee5d717327"
 
       def install
         bin.install "obot"
@@ -28,15 +28,15 @@ class Obot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obot-platform/obot/releases/download/v0.10.0/obot_v0.10.0_linux_amd64.tar.gz"
-      sha256 "3495b5f881fbb3e4d2134c50539acda2d9fa03648590ddd67e5f00c40ecb6918"
+      url "https://github.com/obot-platform/obot/releases/download/v0.11.0-rc1/obot_v0.11.0-rc1_linux_amd64.tar.gz"
+      sha256 "63a63df3266f4c324306f28317ad1c61cdfe5ab527e0e2a5cd3beb912b93340a"
       def install
         bin.install "obot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obot-platform/obot/releases/download/v0.10.0/obot_v0.10.0_linux_arm64.tar.gz"
-      sha256 "85d06177d289745d331200f16aeb6cb10cfb520ff9fb1de8b7e12e30604c7acc"
+      url "https://github.com/obot-platform/obot/releases/download/v0.11.0-rc1/obot_v0.11.0-rc1_linux_arm64.tar.gz"
+      sha256 "4322df04f6ee181d8c5c0e958d3a66403c39b1a4f995657c3ce035bedc66e118"
       def install
         bin.install "obot"
       end
