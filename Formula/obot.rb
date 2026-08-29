@@ -5,20 +5,20 @@
 class Obot < Formula
   desc "Obot CLI"
   homepage "https://github.com/obot-platform/obot"
-  version "0.24.2"
+  version "0.25.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/obot-platform/obot/releases/download/v0.24.2/obot_v0.24.2_darwin_amd64.tar.gz"
-      sha256 "78efec669f9079ee9f2acbb06ddd58efe88cb56b9152fa153cf4152b3493778b"
+      url "https://github.com/obot-platform/obot/releases/download/v0.25.3/obot_v0.25.3_darwin_amd64.tar.gz"
+      sha256 "ac73b2cda6f41ae00b0aa5bef1445855d715f2b8171a4e8074a50e7554011bc6"
 
       define_method(:install) do
         bin.install "obot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/obot-platform/obot/releases/download/v0.24.2/obot_v0.24.2_darwin_arm64.tar.gz"
-      sha256 "1a02ac933405dba147df9787ff9d1f5c66993961d4497e5356ca74d8a698e950"
+      url "https://github.com/obot-platform/obot/releases/download/v0.25.3/obot_v0.25.3_darwin_arm64.tar.gz"
+      sha256 "ebda4f6bb4b4fc55e8b83006140738a65aca078789e78c4e5de55b0d530115a1"
 
       define_method(:install) do
         bin.install "obot"
@@ -28,15 +28,15 @@ class Obot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obot-platform/obot/releases/download/v0.24.2/obot_v0.24.2_linux_amd64.tar.gz"
-      sha256 "39a83cb940641530c7c2a1216f24e92c6a6e80e0004bc6329ca8a2f6ab63a61d"
+      url "https://github.com/obot-platform/obot/releases/download/v0.25.3/obot_v0.25.3_linux_amd64.tar.gz"
+      sha256 "b9276e4ecac81d94b414c26d5168b3ecc7fdf85c0b3ca73c587e24bd3c671a17"
       define_method(:install) do
         bin.install "obot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/obot-platform/obot/releases/download/v0.24.2/obot_v0.24.2_linux_arm64.tar.gz"
-      sha256 "951c892c3f0a2dccde3af4950300ccceb37d72be63eb2b6653325bcfdc647a31"
+      url "https://github.com/obot-platform/obot/releases/download/v0.25.3/obot_v0.25.3_linux_arm64.tar.gz"
+      sha256 "08736646ff289cff436ce6e7816be00dca8db56e361b03e8cb2429584fb6760e"
       define_method(:install) do
         bin.install "obot"
       end
